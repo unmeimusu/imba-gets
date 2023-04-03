@@ -50,8 +50,14 @@ console.log "too much3" if amount < max
 
 console.log "limit exceeded4" unless amount < max
 
-if (conditionOne or conditionTwo) and (partInStock)
-	doRepair()
-else
-	askCustomerToWait()
+let conditionOne
+let conditionTwo
+let partInStock
+
+def askCustomerToWait() do console.log "please wait"
+
+def doRepair() do console.log "a function"
+
+if (conditionOne or conditionTwo) and (partInStock) then doRepair()
+	else then askCustomerToWait()
 
