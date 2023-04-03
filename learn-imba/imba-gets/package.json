@@ -1,5 +1,5 @@
 {
-	"name": "imba-gets",
+	"name": "imba-g",
 	"scripts": {
 		"dev": "imba -w src/index.html",
 		"start": "npm run dev",
