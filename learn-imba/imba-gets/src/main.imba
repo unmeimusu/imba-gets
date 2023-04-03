@@ -44,4 +44,14 @@ let amount = 12
 
 if amount > max then console.log "too much!" else console.log "good amount"
 
-if amount > max then console.log "too much!" elif amount == max then console.log "just right" else console.log "add more"
+if amount > max then console.log "too much!2" elif amount == max then console.log "just right2" else console.log "add more2"
+
+console.log "too much3" if amount < max
+
+console.log "limit exceeded4" unless amount < max
+
+if (conditionOne or conditionTwo) and (partInStock)
+	doRepair()
+else
+	askCustomerToWait()
+
