@@ -60,4 +60,3 @@ def doRepair() do console.log "a function"
 
 if (conditionOne or conditionTwo) and (partInStock) then doRepair()
 	else then askCustomerToWait()
-
