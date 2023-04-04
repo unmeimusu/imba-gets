@@ -218,7 +218,10 @@ class Todo
 	static def createTodos titles
 		titles.map do(title)
 			new Todo(title: title)
-
+# Add a to do title with initialized class members
 const todo = new Todo title: 'Read instruction'
 
 console.log todo
+# Insert to do list
+const newTodos = Todo.createTodos ['Learn Imba','Eat Breakfast']
+console.log newTodos
