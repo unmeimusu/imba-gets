@@ -37,11 +37,12 @@ console.log "{duration} {longerDuration}"
 
 const element = <div.large.header> "Welcome"
 
-# conditionals
+# conditionals 
 
 const max = 20
 let amount = 14
-
+# one line is more readable but I encountered some issue sometimes not auto reload,
+# especially while using then/do.
 if amount > max then console.log "too much!0" else console.log "good amount0"
 
 if amount > max then console.log "too much!2" elif amount == max then console.log "just right2" else console.log "add more2"
@@ -54,9 +55,11 @@ let conditionOne
 let conditionTwo
 let partInStock
 
-def askCustomerToWait() do console.log "please wait"
+def askCustomerToWait() 
+	console.log "please wait"
 
-def doRepair() do console.log "a function"
+def doRepair()
+	console.log "a function"
 doRepair()
 
 if (conditionOne or conditionTwo) and (partInStock)
