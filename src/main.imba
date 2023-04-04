@@ -193,3 +193,12 @@ def withDefaultVal param = 21
 	console.log param
 withDefaultVal!
 
+# object can be destuctured and given default values as in js
+def buildCharacter name, {title, desc = 'indescribable'}
+	"{name},{title},{desc}"
+
+console.log buildCharacter('Frent',{title: 'Adventurer'})
+
+
+class Todo
+	# Properties are member variables:
