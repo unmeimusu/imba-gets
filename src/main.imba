@@ -72,3 +72,22 @@ console.log amount > max ? 'too much (ternary)' : 'not enough (ternary)'
 
 # single line if/then/else
 console.log if amount > max then 'too much (one line elseif)' else 'not enough (one line elseif)'
+
+# functions
+
+def func(a,b)
+	return console.log a * b
+func(4,3)
+
+def alsoFunc(a,b)
+	a * b # implicit return
+
+const smallerFunc = do(a,b) a * b # implicit return on one line
+console.log smallerFunc(2,5)
+
+const single = 'single quotes'
+const double = "double quotes"
+const interpolation = "string has {double}"
+# Interpolating using obj above
+const template = `this template using current version is {indentedObject.version}` 
+console.log template
