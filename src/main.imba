@@ -91,3 +91,19 @@ const interpolation = "string has {double}"
 # Interpolating using obj above
 const template = `this template using current version is {indentedObject.version}` 
 console.log template
+# multiple lines, line breaks are ignored
+const multipleLines = 'one 
+two three'
+console.log multipleLines
+# using  '''/""" to spans several lines includes line breaks
+const lineBreaks = '''
+This string is written
+over multiple lines
+'''
+console.log lineBreaks
+const stringIndentation = '''
+	First level indent is ignored
+		This is indented
+	Not indented
+'''
+console.log stringIndentation
