@@ -221,4 +221,4 @@ class Todo
 
 const todo = new Todo title: 'Read instruction'
 
-console.log Todo
+console.log todo
