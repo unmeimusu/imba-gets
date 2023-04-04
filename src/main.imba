@@ -121,6 +121,6 @@ def myTag(strings,personExp,ageExp)
 	# we can even return a string built using a template literal
 	"{str0}{personExp}{str1}{ageStr}{str2}"
 
-const output = myTag`that {person} is a {age}.`
+const output = myTag`That {person} is a {age}.`
 
 console.log output
