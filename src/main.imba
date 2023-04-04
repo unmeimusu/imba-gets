@@ -225,3 +225,24 @@ console.log todo
 # Insert to do list
 const newTodos = Todo.createTodos ['Learn Imba','Eat Breakfast']
 console.log newTodos
+
+# Loop & Iteration on array object
+const newTodos2 = Todo.createTodos ['Learn Imba','Eat breakfast']
+console.log newTodos2
+for todo, index of newTodos2
+	console.log "{todo.title} at position {index}"
+# object "for own" key and value
+const object6 = 
+	hello: 'world'
+	learning: 'imba'
+	answer: 42
+for own key, value of object
+	console.log "{key} {value}"
+# regular expression with whitespace and comments in multi line regexes
+const literal = /ab+c/i
+const regex = new RegExp('ab+c','i')
+const multiline = ///
+	ab+
+	c
+///
+console.log multiline,regex,literal
