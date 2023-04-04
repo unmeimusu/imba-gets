@@ -246,3 +246,35 @@ const multiline = ///
 	c
 ///
 console.log multiline,regex,literal
+
+# ranges in array alternative myarray.length
+const item = []
+for i in [1...5] # from 1 to limit 5
+	item.push(i)
+console.log item
+
+# Elements
+const list = <ul title="reminders">
+	<li> "Remember drink"
+	<li> "Keep smiling"
+
+imba.mount list
+
+# CSS classes
+const state = 'open'
+const condition = yes
+
+const list2 = <div>
+	<div.panel.large> "With classes"
+	<div.state-{state}> "Dynamic class name"
+	<div.hidden=condition> "Conditionally hidden"
+	<div.panel.state-{state} .hidden=condition> "Dynamic and conditional"
+
+imba.mount list2
+
+# Handlers
+global css .panel inset:10px rd:lg d:flex ja:center bgc:amber1 cursor:pointer user-select:none
+const handler = do(event)
+	console.log "Panel clicked!"
+
+imba.mount <div.panel @click.prevent=handler> "Panel"
