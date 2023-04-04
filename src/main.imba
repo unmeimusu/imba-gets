@@ -121,7 +121,64 @@ def myTag(strings,personExp,ageExp)
 
 	# we can even return a string built using a template literal
 	"{str0}{personExp}{str1}{ageStr}{str2}"
-
-const output = myTag'That {person} is a {age}.'
+# works only with curly quotes
+const output = myTag`That {person} is a {age}.`
 
 console.log output
+
+# Arrays
+const withCommas = [
+	'one',
+	'two',
+	'three',
+	'four'
+]
+# same result
+const withoutCommas = [
+	'onewo'
+	'twowo'
+	'threewo'
+	'fouro'
+]
+
+console.log withCommas, withoutCommas
+
+# Objects
+const object2 = { a: 'foo', b: 42, c: {}}
+const person2 =
+	name: 'Bob Smith'
+	age: 32
+	gender: 'male'
+# Curly braces are optional as the keys and values are clear
+def logObject(object)
+	console.log "Logging: ", object
+logObject(name: 'Harley', profession: 'Actor')
+# example with dashes for array of objects
+let todos = [
+	title: 'one'
+	completed: yes
+	-
+	title: 'two'
+	completed: no
+]
+console.log todos
+# dynamically set property name using a variable
+const field = 'age'
+const person3 = {
+	[field]: 32 # dynamic property name
+	name: 'Smith'
+}
+console.log 'Smith\'s age is',person3.age
+
+# keys work the same way as in js
+const person4 = { name: 'Bob', age: 32, gender: "male" }
+console.log person4['name']
+person4['age'] = 33
+console.log person4.age
+
+# variables as properties of an object
+const a = 'foo'
+const b = 44
+const c = {}
+const object5 = {a,b,c}
+console.log object5
