@@ -111,6 +111,7 @@ console.log stringIndentation
 const person = 'Mike'
 const age = 28
 
+# template literal
 def myTag(strings,personExp,ageExp)
 	const str0 = strings[0] # "That "
 	const str1 = strings[1] # " is a "
@@ -121,6 +122,6 @@ def myTag(strings,personExp,ageExp)
 	# we can even return a string built using a template literal
 	"{str0}{personExp}{str1}{ageStr}{str2}"
 
-const output = myTag`That {person} is a {age}.`
+const output = myTag'That {person} is a {age}.'
 
 console.log output
