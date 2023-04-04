@@ -182,3 +182,14 @@ const b = 44
 const c = {}
 const object5 = {a,b,c}
 console.log object5
+
+# methods by skipping parenthesis
+def withArgument param
+	console.log param
+
+withArgument "With an argument" + 43
+# can use ! to replace any parenthesis ()
+def withDefaultVal param = 21
+	console.log param
+withDefaultVal!
+
