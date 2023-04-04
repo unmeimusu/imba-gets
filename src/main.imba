@@ -40,7 +40,7 @@ const element = <div.large.header> "Welcome"
 # conditionals
 
 const max = 20
-let amount = 12
+let amount = 28
 
 if amount > max then console.log "too much!" else console.log "good amount"
 
@@ -60,3 +60,9 @@ def doRepair() do console.log "a function"
 
 if (conditionOne or conditionTwo) and (partInStock) then doRepair()
 	else then askCustomerToWait()
+
+# ternary
+console.log amount > max ? 'too much (ternary)' : 'not enough (ternary)'
+
+# single line if/then/else
+console.log if amount > max then 'too much (one line elseif)' else 'not enough (one line elseif)'
