@@ -202,3 +202,23 @@ console.log buildCharacter('Frent',{title: 'Adventurer'})
 
 class Todo
 	# Properties are member variables:
+	title
+	completed = no
+	due = null
+
+	# Metjods are instance level function
+	def complete
+		completed = yes
+	
+	# Getters
+	get overdue
+		due and due < new Date
+
+	# Static methods are class level functions
+	static def createTodos titles
+		titles.map do(title)
+			new Todo(title: title)
+
+const todo = new Todo title: 'Read instruction'
+
+console.log Todo
