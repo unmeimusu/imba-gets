@@ -318,17 +318,17 @@ tag my-app
 imba.mount <my-app>
 
 # types
-const item\string = window.title
+const item2\string = document.title
 
 def multiply a\number, b\number
 	a * b
 
-tag output-item
+tag output-items
 	<self>
-		<h4> "Variable output"
-		<div> "{item} {multiply(4,3)}"
-		
-imba.mount <output-item>
+		<h4> "Output from typed variable"
+		<div> "{item2} - {multiply(4,3)}"
+
+imba.mount <output-items>
 
 # typescript 
 tag script-app
