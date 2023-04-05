@@ -317,6 +317,19 @@ tag my-app
 
 imba.mount <my-app>
 
+# types
+const item\string = window.title
+
+def multiply a\number, b\number
+	a * b
+
+tag output-item
+	<self>
+		<h4> "Variable output"
+		<div> "{item} {multiply(4,3)}"
+		
+imba.mount <output-item>
+
 # typescript 
 tag script-app
 	<self>
