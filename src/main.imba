@@ -293,3 +293,8 @@ tag todo-app
 
 # Rendering the todo-app with the imported todos array:
 imba.mount <todo-app data=todos3>
+
+<div[display:flex flex-direction:row color:blue]>
+<div[opacity:0.5 @hover:1]> # conditional styles based on pseudostates.
+<div[padding:3rem @lg:5rem @print:0]> # conditional styles based on media queries.
+
