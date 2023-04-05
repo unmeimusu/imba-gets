@@ -330,12 +330,12 @@ tag output-items
 
 imba.mount <output-items>
 
-# typescript 
+# script inside imba's element
 tag script-app
 	<self>
-		<h4> "Running js/ts inside Imba elements"
+		<h4> "Running js inside Imba elements"
 		<div id='print'>
-		<script type="application/javascript">
+		<script>
 			document.getElementById('print').innerHTML="Hello"
 
 imba.mount <script-app>
