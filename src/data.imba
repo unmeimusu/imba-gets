@@ -1,4 +1,4 @@
-let todos = [{
+let todos3 = [{
 	id: 1
 	title: 'Walk out'
 	desc: 'Let\'s go take some fresh air'
@@ -11,3 +11,5 @@ let todos = [{
 	title: 'Shopping'
 	desc: 'Check some marketplace to buy some stuffs'
 }]
+
+export {todos3}
