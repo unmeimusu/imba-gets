@@ -316,3 +316,13 @@ tag my-app
 		<div> "{name}" # string interpolation in an element
 
 imba.mount <my-app>
+
+# typescript 
+tag script-app
+	<self>
+		<h4> "Running js/ts inside Imba elements"
+		<div id='print'>
+		<script type="application/javascript">
+			document.getElementById('print').innerHTML="Hello"
+
+imba.mount <script-app>
