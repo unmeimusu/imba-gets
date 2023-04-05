@@ -273,7 +273,7 @@ const list2 = <div>
 imba.mount list2
 
 # Elements with handlers and CSS
-global css .panel inset:100px rd:lg d:flex ja:center bgc:amber1 cursor:pointer user-select:none
+global css .panel inset:300px rd:lg d:flex ja:center bgc:amber1 cursor:pointer user-select:none
 const handler = do(event)
 	console.log "Panel clicked!"
 imba.mount <div.panel @click.prevent=handler> "Panel"
