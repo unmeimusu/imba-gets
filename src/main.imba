@@ -304,3 +304,16 @@ tag element-app
 		<div[c:blue]> 'Blue text color'
 
 imba.mount <element-app>
+
+tag my-app
+	<self>
+		# this is a comment
+		const name = "imba" # my favorite language
+		###
+		Hello <div> "MY" this is multiline comment
+		###
+
+		const color = 'blue'
+		<div> "{name}" # string interpolation in an element
+
+imba.mount <my-app>
