@@ -312,7 +312,6 @@ tag my-app
 		###
 		Hello <div> "MY" this is multiline comment
 		###
-
 		const color = 'blue'
 		<div> "{name}" # string interpolation in an element
 
