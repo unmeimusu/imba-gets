@@ -294,11 +294,12 @@ tag todo-app
 # Rendering the todo-app with the imported todos array:
 imba.mount <todo-app data=todos3>
 
+# Shorthand element with conditional styles
 tag element-app
 	<self>
 		<div[display:flex flex-direction:row color:blue]> "flex on a row with blue text color"
-		<div[opacity:0.5 @hover:1]> "hover" # conditional styles based on pseudostates.
-		<div[padding:3rem @lg:5rem @print:0]> "container with padding"# conditional styles based on media queries.
+		<div[opacity:0.5 @hover:1]> "hover to trigger style changes" # conditional styles based on pseudostates.
+		<div[padding:3rem @lg:5rem @print:0]> "container with conditional styles based on media queries"# conditional styles based on media queries.
 
 		<div[c:blue]> 'Blue text color'
 
