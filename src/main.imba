@@ -260,7 +260,7 @@ const list = <ul title="reminders">
 
 imba.mount list
 
-# CSS classes
+# Elements with CSS classes
 const state = 'open'
 const condition = yes
 
@@ -272,9 +272,24 @@ const list2 = <div>
 
 imba.mount list2
 
-# Handlers
-global css .panel inset:10px rd:lg d:flex ja:center bgc:amber1 cursor:pointer user-select:none
+# Elements with Handlers and CSS
+global css .panel inset:100px rd:lg d:flex ja:center bgc:amber1 cursor:pointer user-select:none
 const handler = do(event)
 	console.log "Panel clicked!"
-
 imba.mount <div.panel @click.prevent=handler> "Panel"
+
+import {todos3} from './data'
+
+tag todo-item
+	<self .completed=data.completed>
+		<input bind=data.completed type="checkbox">
+		<span.title> data.title
+		<button @click.stop.emit('remove')> 'x'
+
+# Using the todo-item inside another web component:
+tag todo-app
+	<self> for todo in todos3
+		<todo-item data=todo>
+
+# Rendering the todo-app with the imported todos array:
+imba.mount <todo-app data=todos3>
