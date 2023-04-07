@@ -335,6 +335,7 @@ tag script-app
 	<self>
 		<h4> "Running js inside Imba elements"
 		<div id='print'>
+		# one space before ''' below is important here, restart the compiler to make sure it's work
 		<script> '''
 			document.getElementById('print').innerHTML="Hello, I'm a string from native javascript inside Imba's element"
 		'''
