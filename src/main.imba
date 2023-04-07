@@ -339,5 +339,8 @@ tag script-app
 		<script> '''
 			document.getElementById('print').innerHTML="Hello, I'm a string from native javascript inside Imba's element"
 		'''
+		# alternative version
+		<div$print>
+		$print.innerHTML = 'hello, I\'m alternative from the example above'
 
 imba.mount <script-app>
