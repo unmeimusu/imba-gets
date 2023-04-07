@@ -335,7 +335,8 @@ tag script-app
 	<self>
 		<h4> "Running js inside Imba elements"
 		<div id='print'>
-		<script>
-			document.getElementById('print').innerHTML="Hello"
+		<script> '''
+			document.getElementById('print').innerHTML="Hello, I'm a string from native javascript inside Imba's element"
+		'''
 
 imba.mount <script-app>
