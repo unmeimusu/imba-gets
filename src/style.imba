@@ -1,5 +1,5 @@
-global 
-css *
+css 
+	*
 	box-sizing:border-box
 
 

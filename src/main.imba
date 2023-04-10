@@ -348,4 +348,5 @@ tag script-app
 
 imba.mount <script-app>
 
+# import components
 imba.mount do <my-component>
