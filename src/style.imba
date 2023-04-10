@@ -1,21 +1,20 @@
-css 
-	*
+global css *
 	box-sizing:border-box
 
 
-css body
+global css body
 	m:0
 
 
-css *
+global css *
 	box-sizing:border-box
 
 
-css body
+global css body
 	m:0
 
 
-css #igzh
+global css #igzh
 	bgr:repeat
 	bgp:left top
 	bga:scroll
@@ -23,7 +22,7 @@ css #igzh
 	bgi:linear-gradient(#713535 0%, #713535 100%)
 
 
-css .gjs-row
+global css .gjs-row
 	d:flex
 	jc:flex-start
 	ai:stretch
@@ -31,20 +30,20 @@ css .gjs-row
 	p:10px
 
 
-css .gjs-cell
+global css .gjs-cell
 	min-height:75px
 	flg:1
 	flb:100%
 
 
-css #igvi
+global css #igvi
 	float:none
 	d:flex
 	jc:center
 	fld:column-reverse
 
 
-css #il0j
+global css #il0j
 	ai:center
 	jc:center
 	fld:column-reverse
@@ -52,14 +51,14 @@ css #il0j
 	float:none
 
 
-css #i8x44
+global css #i8x44
 	float:left
 
 
-css #itcjo
+global css #itcjo
 	float:left
 
 
-css @!768
+global css @!768
 	.gjs-row,
 		flw:wrap
