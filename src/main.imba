@@ -1,3 +1,6 @@
+import "./style"
+import "./component"
+
 # output
 console.log "Test"
 # string interpolation
@@ -344,3 +347,5 @@ tag script-app
 		$print.innerHTML = 'hello, I\'m alternative from the example above'
 
 imba.mount <script-app>
+
+imba.mount do <my-component>
