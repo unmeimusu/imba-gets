@@ -1,4 +1,4 @@
-import "./style"
+import "./style" # import style
 import "./component"
 
 # output
@@ -348,5 +348,7 @@ tag script-app
 
 imba.mount <script-app>
 
-# import components
+# import component and use style
 imba.mount do <my-component>
+
+# using CSS framework
