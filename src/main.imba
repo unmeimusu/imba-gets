@@ -4,7 +4,7 @@ import "./component"
 # output
 console.log "Test"
 # string interpolation
-let msg = "CTS"
+let msg = "Welcome!"
 
 console.log "hello, {msg}"
 
@@ -352,3 +352,8 @@ imba.mount <script-app>
 imba.mount do <my-component>
 
 # using CSS framework
+tag tw-ui
+	<self>
+		<figure.md:flex.bg-slate-100>
+
+imba.mount do <tw-ui>
