@@ -351,9 +351,9 @@ imba.mount <script-app>
 # import component and use style
 imba.mount do <my-component>
 
-# using CSS framework
+# using CSS framework - TailwindCSS
 tag tw-ui
 	<self>
-		<figure.md:flex.bg-slate-100>
+		<figure[md:flex bg-slate-100 rounded-xl p-8]> "CSS framework on the fly"
 
 imba.mount do <tw-ui>
